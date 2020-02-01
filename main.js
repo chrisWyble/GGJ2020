@@ -23,7 +23,7 @@ function init(){
 }
 
 function start(){
-    dlg = new Dialog("",50,50,540,260); // test dialog
+    dlg = new Dialog("",30,30); // test dialog
     camx = 0;
     camxgoal = 0;
     window.requestAnimationFrame(gameLoop);
