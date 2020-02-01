@@ -13,6 +13,6 @@ class Dialog{
     
     render(){
         drawImage("dialog_background",this.x,this.y,this.shadow);
-        (camx*0.9+camxgoal*0.1);
+        this.shadow=this.shadow*0.9+10*0.1;
     }
 }
