@@ -4,8 +4,8 @@ class Dialog{
         this.title=title;
 
         //Coordinates of top-left corner
-        this.x=x;
-        this.y=y;
+        this.x=x+10;
+        this.y=y+10;
         
         //Initialize pop-up animation
         this.shadow=0;

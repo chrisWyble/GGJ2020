@@ -1,3 +1,4 @@
+var cvs;
 var ctx;
 var sprites;
 var camx;
