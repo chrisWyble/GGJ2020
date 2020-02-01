@@ -10,6 +10,7 @@ class IconButton{
     
     render(){
         drawImage("icon_button",this.x,this.y,1);
+        drawImage("ic/generic_garbage",this.x+8,this.y+8,1);
         //this.shadow=this.shadow*0.9+10*0.1;
         //this.x=this.x*0.9-10*0.1;
         //this.y=this.y*0.9-10*0.1;

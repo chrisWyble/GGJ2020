@@ -4,7 +4,10 @@ var imgNames=[
     "dialog_background",
     "factory_background",
     "icon_button",
-    "text_button"
+    "text_button",
+    
+    //Icons
+    "ic/generic_garbage"
 ];
 var sprites;
 var camx;

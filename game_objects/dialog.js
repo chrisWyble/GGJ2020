@@ -10,7 +10,7 @@ class Dialog{
         //Initialize pop-up animation
         this.shadow=10;
         
-        this.icBtn=new IconButton(undefined,x+50,y+50);
+        this.icBtn=new IconButton("generic_garbage",x+50,y+50);
         this.txtBtn=new TextButton("Cancel",x+50,y+100);
     }
     
