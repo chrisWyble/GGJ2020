@@ -9,9 +9,7 @@ var dlg; //Current dialog
 init();
 
 function gameLoop() {
-    clearScreen();
-    renderBackground();
-    dlg.render();
+    renderAll();
     camx = (camx*0.9+camxgoal*0.1);
     window.requestAnimationFrame(gameLoop);
 }
