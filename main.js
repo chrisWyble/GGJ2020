@@ -10,18 +10,15 @@ function gameLoop() {
 function init(){
     cvs = document.getElementById("gameCanvas");
     ctx = cvs.getContext('2d');
-    loadImages()
+    var imgNames = ['dialog_background'];
+    loadImages(imgNames) // calls start() after loading
 }
-
 function start(){
+    d = new Dialog("",0,0,100,100) // test dialog
     window.requestAnimationFrame(gameLoop);
-    d = new Dialog("",0,0,100,100)
 }
 
-function loadImages() {
-
-    var names = ['dialog_background'];
-
+function loadImages(names) {
     var count  = names.length;
     var loaded = function() { if (--count == 0) start(); };
 
