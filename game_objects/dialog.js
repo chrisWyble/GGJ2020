@@ -23,8 +23,7 @@ class Dialog{
         ctx.save();
         ctx.translate(this.x, this.y);
         drawImageShadow("dialog_background",0,0,this.shadow);
-        this.icBtn.render();
-        this.txtBtn.render();
+        this.buttons.forEach(btn => btn.render())
         //this.shadow=this.shadow*0.9+10*0.1;
         //this.x=this.x*0.9-10*0.1;
         //this.y=this.y*0.9-10*0.1;

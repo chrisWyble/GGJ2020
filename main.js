@@ -1,11 +1,12 @@
 var cvs;
 var ctx;
+var screenScale;
 var imgNames=[
     "dialog_background",
     "factory_background",
     "icon_button",
     "text_button",
-    
+
     //Icons
     "ic/generic_garbage"
 ];
@@ -27,6 +28,7 @@ function gameLoop() {
 function init(){
     cvs = document.getElementById("gameCanvas");
     ctx = cvs.getContext("2d");
+    screenScale = {x:1, y:1};
     loadImages(imgNames); // calls start() after loading
 }
 

@@ -3,7 +3,7 @@ document.addEventListener("keydown",handleKeyEvent);
 
 function handleClickEvent(e){
     e.preventDefault();
-    handleClick(e.offsetX, e.offsetY);
+    handleClick(e.offsetX / screenScale.x, e.offsetY / screenScale.y);
 }
 
 function handleClick(x, y){
