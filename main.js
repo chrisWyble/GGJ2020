@@ -1,3 +1,4 @@
+var ctx;
 start();
 
 
@@ -7,6 +8,6 @@ function gameLoop() {
 }
 
 function start(){
-    var ctx = gameCanvas.getContext('2d');
+    ctx = gameCanvas.getContext('2d');
     window.requestAnimationFrame(gameLoop);
 }
