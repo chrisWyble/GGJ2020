@@ -21,13 +21,16 @@ class IconButton extends Button{
     }
     
     onClickDown(){
-        if(this.mouseover)
+        if(this.mouseover){
             this.img="icon_button_pressed";
+            this.clicked=true;
+        }
     }
 
     onClickUp(){
-        if(!this.mouseover){
+        if(this.mouseover){
             this.img="icon_button";
+            this.clicked=false;
             this.callback();
         }
     }

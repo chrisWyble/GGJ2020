@@ -22,9 +22,6 @@ class TextButton extends Button{
         ctx.fillText(this.text,
                      this.x+sprites["text_button"].width/2,
                      this.y+sprites["text_button"].height/2+9);
-        //this.shadow=this.shadow*0.9+10*0.1;
-        //this.x=this.x*0.9-10*0.1;
-        //this.y=this.y*0.9-10*0.1;
     }
     
     onClickDown(){
