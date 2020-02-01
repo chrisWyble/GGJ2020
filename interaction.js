@@ -7,7 +7,11 @@ function handleClickEvent(e){
 }
 
 function handleClick(x, y){
-    // TODO
+    if(dlg){
+        dlg.click(x,y);
+    }else{
+
+    }
 }
 
 function handleKeyEvent(e){

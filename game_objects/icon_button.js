@@ -7,6 +7,8 @@ class IconButton extends Button{
         //Coordinates of top-left corner
         this.x=x;
         this.y=y;
+        this.w = sprites["ic/generic_garbage"].width;
+        this.h = sprites["ic/generic_garbage"].height;
     }
 
     render(){

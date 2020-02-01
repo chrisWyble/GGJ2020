@@ -7,6 +7,8 @@ class TextButton extends Button{
         //Coordinates of top-left corner
         this.x=x;
         this.y=y;
+        this.w = sprites["text_button"].width;
+        this.h = sprites["text_button"].height;
     }
 
     render(){
