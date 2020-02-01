@@ -13,10 +13,10 @@ function handleClick(x, y){
 function handleKeyEvent(e){
     if(e.key=="ArrowLeft"){
         camxgoal = 640*Math.floor(camx/640-.3);
-        if(camxgoal > 640*4) camxgoal = 640*4;
+        if(camxgoal < 0) camxgoal = 0;
     }
     if(e.key=="ArrowRight"){
         camxgoal = 640*Math.ceil(camx/640+.3);
-        if(camxgoal < 0) camxgoal = 0;
+        if(camxgoal > 640*4) camxgoal = 640*4;
     }
 }
