@@ -108,5 +108,6 @@ function costOf(name, amount){
     return ingredientCost(name) * amount
 }
 function tastinessOf(name, amount){
-    return ingredientPeakTaste(name) * (1 - Math.abs(ingredientPeakQty(name) - amount) / ingredientPeakQty(name))
+    peak = ingredientPeakQty(name);
+    return ingredientPeakTaste(name) * (1 - Math.abs(peak - amount) / peak)
 }
