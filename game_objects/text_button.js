@@ -15,7 +15,7 @@ class TextButton extends Button{
     }
 
     render(){
-        drawImage("text_button",this.x,this.y,1);
+        drawImage(this.img,this.x,this.y,1);
         ctx.textAlign = "center";
         ctx.font = "26px Arial Black";
         ctx.fillStyle = "#999999";
@@ -30,7 +30,7 @@ class TextButton extends Button{
     }
 
     onClickUp(){
-        if(!this.mouseover){
+        if(this.mouseover){
             this.img="text_button";
             this.callback();
         }
