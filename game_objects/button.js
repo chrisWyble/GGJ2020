@@ -1,11 +1,15 @@
 class Button{
     constructor(callback){
-        this.clickCallback = callback;
+        this.callback=callback;
+        
+        this.mouseover=false;
     }
-
-    click(x,y){
-        if(x >= this.x && x <= this.x + this.w
-        && y >= this.y && y <= this.y + this.h)
-            this.clickCallback();
+    
+    updateMouse(x,y){
+        if(x>=this.x && x<=this.x+this.w &&
+           y>=this.y && y<=this.y+this.h)
+            this.mouseover=true;
+        else
+            this.mouseover=false;
     }
 }

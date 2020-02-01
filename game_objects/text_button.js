@@ -1,5 +1,5 @@
 class TextButton extends Button{
-    constructor(text,x,y, callback){
+    constructor(text,x,y,callback){
         super(callback);
         //Dialog title
         this.text=text;
@@ -9,6 +9,9 @@ class TextButton extends Button{
         this.y=y;
         this.w = sprites["text_button"].width;
         this.h = sprites["text_button"].height;
+        
+        //Button image
+        this.img="text_button";
     }
 
     render(){
@@ -22,5 +25,17 @@ class TextButton extends Button{
         //this.shadow=this.shadow*0.9+10*0.1;
         //this.x=this.x*0.9-10*0.1;
         //this.y=this.y*0.9-10*0.1;
+    }
+    
+    onClickDown(){
+        if(this.mouseover)
+            this.img="text_button_pressed";
+    }
+
+    onClickUp(){
+        if(!this.mouseover){
+            this.img="text_button";
+            this.callback();
+        }
     }
 }
