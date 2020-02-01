@@ -11,10 +11,6 @@ class Dialog{
         this.w=w;
         this.h=h;
         
-        ctx.shadowColor="#00000044";
-        ctx.shadowOffsetX=10;
-        ctx.shadowOffsetY=10;
-        ctx.drawImage(sprites["dialog_background"],x,y,w,h);
-        ctx.shadowColor="#00000000";
+        drawImage("dialog_background",x,y,10);
     }
 }
