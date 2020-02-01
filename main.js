@@ -1,12 +1,16 @@
 var ctx;
 var sprites;
 var camx;
+
+//Global ingame objects
+var dlg; //Current dialog
+
 init();
 
 function gameLoop() {
-    renderBackground();
     clearScreen();
     renderBackground();
+    dlg.render();
     window.requestAnimationFrame(gameLoop);
 }
 
@@ -18,7 +22,7 @@ function init(){
 }
 
 function start(){
-    d = new Dialog("",50,50,540,260); // test dialog
+    dlg = new Dialog("",50,50,540,260); // test dialog
     camx = 0;
     window.requestAnimationFrame(gameLoop);
 }
