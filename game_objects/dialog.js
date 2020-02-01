@@ -30,7 +30,10 @@ class Dialog{
         ctx.restore();
     }
 
-    click(x,y){
-        this.buttons.forEach(btn => btn.click(x-this.x,y-this.y));
+    mouse(x,y,type){
+        this.buttons.forEach(btn =>
+            {btn.updateMouse(x-this.x,y-this.y);
+            if(type=="mousedown" || type=="touchstart") btn.onClickDown();
+            if(type=="mouseup" || type=="touchend") btn.onClickUp();});
     }
 }

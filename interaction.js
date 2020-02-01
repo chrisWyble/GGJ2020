@@ -1,14 +1,18 @@
-gameCanvas.addEventListener("click", handleClickEvent);
+gameCanvas.addEventListener('mousedown', handleMouseEvent);
+gameCanvas.addEventListener('touchstart', handleMouseEvent);
+gameCanvas.addEventListener('mousemove', handleMouseEvent);
+gameCanvas.addEventListener('mouseup', handleMouseEvent);
+gameCanvas.addEventListener('touchend', handleMouseEvent);
 document.addEventListener("keydown",handleKeyEvent);
 
-function handleClickEvent(e){
+function handleMouseEvent(e){
     e.preventDefault();
-    handleClick(e.offsetX / screenScale.x, e.offsetY / screenScale.y);
+    handleMouse(e.offsetX / screenScale.x, e.offsetY / screenScale.y, e.type);
 }
 
-function handleClick(x, y){
+function handleMouse(x, y, type){
     if(dlg){
-        dlg.click(x,y);
+        dlg.mouse(x,y,type);
     }else{
 
     }
