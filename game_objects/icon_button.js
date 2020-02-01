@@ -1,4 +1,4 @@
-class Icon_button{
+class IconButton{
     constructor(icon,x,y){
         //Dialog title
         this.icon=icon;
@@ -9,7 +9,7 @@ class Icon_button{
     }
     
     render(){
-        drawImage("icon_button",this.x,this.y,0);
+        drawImage("icon_button",this.x,this.y,1);
         //this.shadow=this.shadow*0.9+10*0.1;
         //this.x=this.x*0.9-10*0.1;
         //this.y=this.y*0.9-10*0.1;

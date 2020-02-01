@@ -13,7 +13,11 @@ function clearScreen(){
 }
 
 function drawImage(img,x,y,scale){
-    ctx.drawImage(sprites[img],x,y,sprites[img]);
+    ctx.drawImage(sprites[img],
+                  x,
+                  y,
+                  sprites[img].width*scale,
+                  sprites[img].height*scale);
 }
 
 function drawImageShadow(img,x,y,shadow){
