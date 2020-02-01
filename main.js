@@ -1,5 +1,11 @@
 var cvs;
 var ctx;
+var imgNames=[
+    "dialog_background",
+    "factory_background",
+    "icon_button",
+    "text_button"
+];
 var sprites;
 var camx;
 var camxgoal;
@@ -18,7 +24,6 @@ function gameLoop() {
 function init(){
     cvs = document.getElementById("gameCanvas");
     ctx = cvs.getContext("2d");
-    var imgNames = ["dialog_background", "factory_background"];
     loadImages(imgNames); // calls start() after loading
 }
 

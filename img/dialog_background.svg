@@ -33,9 +33,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="324.61468"
-     inkscape:cy="220.8414"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="138.6072"
+     inkscape:cy="87.192316"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -54,11 +54,12 @@
      inkscape:bbox-paths="true"
      inkscape:bbox-nodes="true"
      inkscape:snap-bbox-edge-midpoints="true"
-     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-bbox-midpoints="false"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     inkscape:snap-nodes="false" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -86,10 +87,11 @@
        ry="6.3476524"
        rx="6.3476524" />
     <path
-       style="opacity:1;fill:#efefef;fill-opacity:1;stroke:none;stroke-width:5.55511236;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
-       d="m 174.75212,22.54952 c 3.5166,0 6.34793,2.831335 6.34793,6.347933 v 95.254657 c 0,3.5166 -2.83133,6.34741 -6.34793,6.34741 H 36.106323 c -3.516601,0 -6.347934,-2.83081 -6.347934,-6.34741 v 3.175 c 0,3.5166 2.831333,6.34741 6.347934,6.34741 H 176.86878 c 3.5166,0 6.34794,-2.83081 6.34794,-6.34741 V 28.897453 c 0,-3.516598 -2.83134,-6.347933 -6.34794,-6.347933 z"
-       id="rect847"
+       style="opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:none;stroke-width:24.52704048;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+       d="M 542.00977,0 C 555.30085,0 566,10.699151 566,23.990234 v 155.294926 14 194.79659 C 566,398.00921 558.00921,406 548.08175,406 h -250.50948 -14 H 23.990234 C 10.699149,406 0,395.30085 0,382.00977 v 14 C 0,409.30085 10.69915,420 23.990234,420 H 556.00977 C 569.30085,420 580,409.30085 580,396.00977 V 23.990234 C 580,10.69915 569.30085,0 556.00977,0 Z"
+       transform="matrix(0.26458333,0,0,0.26458333,29.758389,22.54952)"
+       id="rect3276"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="csssscssssssc" />
+       sodipodi:nodetypes="csccssccscssssssc" />
   </g>
 </svg>

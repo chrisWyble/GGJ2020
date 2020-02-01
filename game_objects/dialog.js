@@ -8,11 +8,13 @@ class Dialog{
         this.y=y;
         
         //Initialize pop-up animation
-        this.shadow=0;
+        this.shadow=10;
+        
+        var icBtn=new IconButton
     }
     
     render(){
-        drawImage("dialog_background",this.x,this.y,this.shadow);
+        drawImageShadow("dialog_background",this.x,this.y,this.shadow);
         //this.shadow=this.shadow*0.9+10*0.1;
         //this.x=this.x*0.9-10*0.1;
         //this.y=this.y*0.9-10*0.1;
