@@ -1,5 +1,6 @@
 var ctx;
 var sprites;
+var camx;
 init();
 
 function gameLoop() {
@@ -16,6 +17,7 @@ function init(){
 
 function start(){
     d = new Dialog("",50,50,540,260); // test dialog
+    camx = 0;
     window.requestAnimationFrame(gameLoop);
 }
 
