@@ -1,6 +1,10 @@
 gameCanvas.addEventListener("click", handleClick);
 
-function handleClick(e){
+function handleClickEvent(e){
     e.preventDefault();
-    console.log(e);
+    handleClick(e.offsetx, e.offsety);
+}
+
+function handleClick(x, y){
+
 }
