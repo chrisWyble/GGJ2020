@@ -13,8 +13,9 @@ function init(){
     var imgNames = ['dialog_background'];
     loadImages(imgNames) // calls start() after loading
 }
+
 function start(){
-    d = new Dialog("",50,50,590,310); // test dialog
+    d = new Dialog("",50,50,540,260); // test dialog
     window.requestAnimationFrame(gameLoop);
 }
 
