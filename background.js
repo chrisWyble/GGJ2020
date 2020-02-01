@@ -1,3 +1,8 @@
+function clearScreen(){
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+}
+
 function renderBackground(){
     ctx.save();
     ctx.translate(-camx, 0);

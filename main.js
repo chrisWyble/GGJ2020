@@ -4,6 +4,7 @@ var camx;
 init();
 
 function gameLoop() {
+    clearScreen();
     renderBackground();
     window.requestAnimationFrame(gameLoop);
 }
