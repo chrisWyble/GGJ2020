@@ -1,21 +1,25 @@
 var ctx;
 var sprites;
+var camx;
 init();
 
 function gameLoop() {
-    //renderBackground();
+    renderBackground();
+    clearScreen();
+    renderBackground();
     window.requestAnimationFrame(gameLoop);
 }
 
 function init(){
     cvs = document.getElementById("gameCanvas");
     ctx = cvs.getContext('2d');
-    var imgNames = ['dialog_background'];
+    var imgNames = ['dialog_background', 'factory_background'];
     loadImages(imgNames) // calls start() after loading
 }
 
 function start(){
     d = new Dialog("",50,50,540,260); // test dialog
+    camx = 0;
     window.requestAnimationFrame(gameLoop);
 }
 
