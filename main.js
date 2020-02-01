@@ -11,7 +11,7 @@ function gameLoop() {
 function init(){
     cvs = document.getElementById("gameCanvas");
     ctx = cvs.getContext('2d');
-    var imgNames = ['dialog_background'];
+    var imgNames = ['dialog_background', 'factory_background'];
     loadImages(imgNames) // calls start() after loading
 }
 
