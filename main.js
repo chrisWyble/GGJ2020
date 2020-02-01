@@ -14,7 +14,7 @@ function init(){
     loadImages(imgNames) // calls start() after loading
 }
 function start(){
-    d = new Dialog("",0,0,100,100) // test dialog
+    d = new Dialog("",50,50,590,310); // test dialog
     window.requestAnimationFrame(gameLoop);
 }
 
