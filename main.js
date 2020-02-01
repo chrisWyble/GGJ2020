@@ -3,7 +3,7 @@ var sprites;
 init();
 
 function gameLoop() {
-    renderBackground();
+    //renderBackground();
     window.requestAnimationFrame(gameLoop);
 }
 
