@@ -7,7 +7,7 @@ function handleClickEvent(e){
 }
 
 function handleClick(x, y){
-    camx += x-320 // TODO remove
+    // TODO
 }
 
 function handleKeyEvent(e){
