@@ -18,4 +18,18 @@ class Button{
             this.clicked=false;
         }
     }
+    
+    onClickDown(){
+        if(this.mouseover)
+            this.clicked=true;
+    }
+
+    onClickUp(){
+        if(this.mouseover){
+            if(this.clicked)
+                this.callback();
+            
+            this.clicked=false;
+        }
+    }
 }
