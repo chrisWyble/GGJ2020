@@ -6,12 +6,12 @@ class BurgerDialog extends Dialog{
         this.buttons.push(this.btnDone);
 
         var b;
-        var x = 290;
-        var y = 20;
+        var x = 335;
+        var y = 70;
         ingredientNames.forEach(name => {
             b = new IconButton(name,x,y, function(){alert(this.icon)});
-            x += 70;
-            if(x>500){x = 290; y += 70;}
+            x += 55;
+            if(x>500){x = 335; y += 55;}
             this.buttons.push(b);
         });
     }

@@ -8,7 +8,7 @@ var ingredientNames = [
     "Glitter",
     "Animal Growth Hormone",
     "Gravel",
-    "Pure Cocaine",
+    "Assorted Drugs",
     "tbd",
     '"Secret Sauce"'
 ];
