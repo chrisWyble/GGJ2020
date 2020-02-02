@@ -35,7 +35,7 @@ function init(){
 }
 
 function start(){
-    dlg = new Dialog("",30,30); // test dialog
+    dlg = new ProductionDialog();
     camx = 0;
     camxgoal = 0;
     window.requestAnimationFrame(gameLoop);

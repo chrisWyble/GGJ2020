@@ -1,5 +1,8 @@
 class Button{
-    constructor(callback){
+    constructor(x,y,callback){
+        this.x = x;
+        this.y = y;
+        
         this.callback=callback;
         
         this.mouseover=false;
@@ -12,6 +15,20 @@ class Button{
             this.mouseover=true;
         else{
             this.mouseover=false;
+            this.clicked=false;
+        }
+    }
+    
+    onClickDown(){
+        if(this.mouseover)
+            this.clicked=true;
+    }
+
+    onClickUp(){
+        if(this.mouseover){
+            if(this.clicked)
+                this.callback();
+            
             this.clicked=false;
         }
     }
