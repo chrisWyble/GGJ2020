@@ -1,6 +1,6 @@
 class ProductionDialog extends Dialog{
     constructor(){
-        super("Production");
+        super("PRODUCTION");
 
         this.btnDone=new TextButton("DONE",
                                     20,
@@ -9,12 +9,12 @@ class ProductionDialog extends Dialog{
         this.buttons.push(this.btnDone);
 
         var b;
-        var x = 335;
-        var y = 70;
+        var x = 330;
+        var y = 80;
         ingredientNames.forEach(name => {
             b = new IconButton(name,x,y, function(){alert(this.icon)});
             x += 55;
-            if(x>500){x = 335; y += 55;}
+            if(x>500){x = 330; y += 55;}
             this.buttons.push(b);
         });
     }

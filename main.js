@@ -3,11 +3,13 @@ var ctx;
 var screenScale;
 var imgNames=[
     "dialog_background",
+    "dialog_title_background",
     "factory_background",
     "icon_button",
     "icon_button_pressed",
     "text_button",
     "text_button_pressed",
+    "burger",
 
     //Icons
     "ic/generic_garbage"

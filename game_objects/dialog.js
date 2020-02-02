@@ -18,12 +18,18 @@ class Dialog{
         ctx.translate(this.x, this.y);
         drawImageShadow("dialog_background",0,0,this.shadow);
         
+        drawImage("dialog_title_background",
+                  sprites["dialog_background"].width/2-
+                      sprites["dialog_title_background"].width/2,
+                  10,
+                  1);
+        
         ctx.textAlign = "center";
         ctx.font = "30px Arial Black";
-        ctx.fillStyle = "#BBBBBB";
+        ctx.fillStyle = "#8a532e";
         ctx.fillText(this.title,
                      sprites["dialog_background"].width/2,
-                     40);
+                     46);
         
         this.buttons.forEach(btn => btn.render());
         
