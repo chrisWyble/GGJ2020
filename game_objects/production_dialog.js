@@ -6,6 +6,7 @@ class ProductionDialog extends Dialog{
                                     20,
                                     340,
                                     function(){dlg = undefined;});
+                                    sounds["click_Click_DOWN"].play();
         this.buttons.push(this.btnDone);
 
         var b;
