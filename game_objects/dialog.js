@@ -1,7 +1,7 @@
 class Dialog{
     constructor(title,x,y){
         //Dialog title
-        this.title=title;
+        this.title=title; // TODO use this!
 
         //Coordinates of top-left corner
         this.x=x;
@@ -11,12 +11,6 @@ class Dialog{
         this.shadow=10;
 
         this.buttons = []
-
-        this.icBtn=new IconButton("generic_garbage",50,50, function(){});
-        this.txtBtn=new TextButton("DONE",20,340, function(){dlg = undefined;});
-
-        this.buttons.push(this.icBtn);
-        this.buttons.push(this.txtBtn);
     }
 
     render(){
