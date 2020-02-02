@@ -1,26 +1,32 @@
 class Dialog{
-    constructor(title,x,y){
+    constructor(title){
         //Dialog title
         this.title=title; // TODO use this!
 
         //Coordinates of top-left corner
-        this.x=x;
-        this.y=y;
+        this.x=30;
+        this.y=30;
 
         //Initialize pop-up animation
         this.shadow=10;
 
-        this.buttons = []
+        this.buttons=[];
     }
 
     render(){
         ctx.save();
         ctx.translate(this.x, this.y);
         drawImageShadow("dialog_background",0,0,this.shadow);
-        this.buttons.forEach(btn => btn.render())
-        //this.shadow=this.shadow*0.9+10*0.1;
-        //this.x=this.x*0.9-10*0.1;
-        //this.y=this.y*0.9-10*0.1;
+        
+        ctx.textAlign = "center";
+        ctx.font = "30px Arial Black";
+        ctx.fillStyle = "#BBBBBB";
+        ctx.fillText(this.title,
+                     sprites["dialog_background"].width/2,
+                     40);
+        
+        this.buttons.forEach(btn => btn.render());
+        
         ctx.restore();
     }
 

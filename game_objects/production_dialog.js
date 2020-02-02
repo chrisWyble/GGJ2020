@@ -1,8 +1,11 @@
-class BurgerDialog extends Dialog{
+class ProductionDialog extends Dialog{
     constructor(){
-        super("Design your burger!", 30, 30);
+        super("Production");
 
-        this.btnDone=new TextButton("DONE",20,340, function(){dlg = undefined;});
+        this.btnDone=new TextButton("DONE",
+                                    20,
+                                    340,
+                                    function(){dlg = undefined;});
         this.buttons.push(this.btnDone);
 
         var b;

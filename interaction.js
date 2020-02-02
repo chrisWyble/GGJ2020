@@ -1,14 +1,15 @@
-gameCanvas.addEventListener('mousedown', handleMouseEvent);
-gameCanvas.addEventListener('touchstart', handleMouseEvent);
-gameCanvas.addEventListener('mousemove', handleMouseEvent);
-gameCanvas.addEventListener('mouseup', handleMouseEvent);
-gameCanvas.addEventListener('touchend', handleMouseEvent);
+cvs.addEventListener('mousedown', handleMouseEvent);
+cvs.addEventListener('touchstart', handleMouseEvent);
+cvs.addEventListener('mousemove', handleMouseEvent);
+cvs.addEventListener('mouseup', handleMouseEvent);
+cvs.addEventListener('touchend', handleMouseEvent);
 document.addEventListener("keydown",handleKeyEvent);
 
 function handleMouseEvent(e){
     e.preventDefault();
+    
     var x,y;
-    if(e instanceof TouchEvent){
+    if(false){//e instanceof TouchEvent){
         x = e.changedTouches[0].pageX - cvs.getBoundingClientRect().x;
         y = e.changedTouches[0].pageY - cvs.getBoundingClientRect().y;
     }else{
